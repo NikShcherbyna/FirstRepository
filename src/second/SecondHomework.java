@@ -4,7 +4,7 @@ package second;
 public class SecondHomework {
     public static void main(String[] args) {
 
-        wordsCount("   I    love Java");
+        wordsCount("   I   love    Java      ");
         String word = "EyE";
         if (isWordPalindrome(word.toLowerCase())) {
             System.out.println(word.toLowerCase() + " -> palindrome");
@@ -15,8 +15,11 @@ public class SecondHomework {
     }
 
     public static void wordsCount(String name) {
-        int count = 0;
+        int count = 1;
+        name = name.trim();
         for (int i = 0; i < name.length(); i++) {
+
+
             if (name.charAt(i) == ' ' && name.charAt(i + 1) != ' ') {
                 count++;
             }
@@ -24,6 +27,7 @@ public class SecondHomework {
         }
         System.out.println(name + " -> " + count + " words");
     }
+
 
     public static boolean isWordPalindrome(String name) {
         char[] word = name.toCharArray();
