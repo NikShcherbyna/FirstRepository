@@ -18,8 +18,6 @@ public class SecondHomework {
         int count = 1;
         name = name.trim();
         for (int i = 0; i < name.length(); i++) {
-
-
             if (name.charAt(i) == ' ' && name.charAt(i + 1) != ' ') {
                 count++;
             }
