@@ -9,9 +9,3 @@
 *.iws
 *.class
 
-# Mac
-.DS_Store
-
-# Maven
-log/
-target/
