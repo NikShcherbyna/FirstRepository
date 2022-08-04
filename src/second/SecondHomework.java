@@ -3,15 +3,13 @@ package second;
 
 public class SecondHomework {
     public static void main(String[] args) {
-
-        wordsCount("   I   love    Java      ");
+        wordsCount("           I     love         Java     ");
         String word = "EyE";
         if (isWordPalindrome(word.toLowerCase())) {
             System.out.println(word.toLowerCase() + " -> palindrome");
         } else {
             System.out.println(word.toLowerCase() + " -> is not a palindrome");
         }
-
     }
 
     public static void wordsCount(String name) {
@@ -21,11 +19,9 @@ public class SecondHomework {
             if (name.charAt(i) == ' ' && name.charAt(i + 1) != ' ') {
                 count++;
             }
-
         }
         System.out.println(name + " -> " + count + " words");
     }
-
 
     public static boolean isWordPalindrome(String name) {
         char[] word = name.toCharArray();
@@ -37,15 +33,5 @@ public class SecondHomework {
             right--;
         }
         return true;
-
     }
-
 }
-
-
-
-
-
-
-
-
